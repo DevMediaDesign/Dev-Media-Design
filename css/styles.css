@@ -3896,7 +3896,7 @@ img.u-pull-left {
     font-size     : var(--text-size);
     line-height   : var(--vspace-1);
     font-weight   : 500;
-    color         : black;
+    color         : rgb(255, 255, 255);
     margin-top    : 0;
     margin-bottom : var(--vspace-0_25);
 }
