@@ -3049,7 +3049,7 @@ img.u-pull-left {
     margin-top       : -1px;
     font             : 0/0 a;
     text-shadow      : none;
-    color            : transparent;
+    color            : white;
     transition       : background-color 0.2s ease-in-out;
     position         : absolute;
     right            : 23px;
