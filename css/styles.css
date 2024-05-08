@@ -2992,7 +2992,7 @@ img.u-pull-left {
     font-size           : 1.4rem;
     font-weight         : 400;
     line-height         : var(--vspace-1);
-    color               : rgba(255, 255, 255, 0.6);
+    color               : rgb(255, 255, 255);
     padding             : 0 1.2rem;
     transition-property : color, background-color;
 }
