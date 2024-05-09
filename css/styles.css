@@ -3120,7 +3120,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 800px) {
     .s-header {
-        --logo-width : 200px;
+        --logo-width : 36px;
         top          : var(--vspace-0_25);
     }
 
@@ -3212,7 +3212,7 @@ img.u-pull-left {
 
 @media screen and (max-width: 400px) {
     .s-header__logo {
-        transform : translate(7vw, -50%);
+        --logo-width : 150px;
     }
 
     .s-header__nav {
