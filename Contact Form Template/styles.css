@@ -1,0 +1,109 @@
+:root {
+    --bg-color: rgba(18, 18, 18, 0.8);
+    --text-color: #ffffff;
+    --accent-color: #6200EA;
+    --button-bg-color: rgba(98, 0, 234, 0.8);
+    --button-hover-color: rgba(98, 0, 234, 0.9);
+    --input-bg-color: rgba(255, 255, 255, 0.1);
+    --border-color: rgba(255, 255, 255, 0.3);
+}
+
+html, body {
+    min-height: 100%; /* Use min-height instead of height to ensure it covers at least the viewport height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(https://images.unsplash.com/photo-1551368321-dddf8a05c459?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center / cover;
+    background-color: var(--bg-color); /* Ensures the background color shows if the image cannot load */
+    background-attachment: fixed; /* Keeps the background fixed during scrolling */
+    box-sizing: border-box;
+}
+
+h1#title, p#description {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+#survey-form {
+    width: 100vw;
+    max-width: 600px;
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    color: #ffffff;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg-color);
+    color: var(--text-color);
+    box-sizing: border-box; 
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-bg-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--button-hover-color);
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    color: var(--text-color);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+textarea {
+    resize: none; 
+    height: 120px;
+}
+
+@media (max-width: 600px) {
+    #survey-form {
+        width: 100%;
+        border-radius: 0;
+    }
+}

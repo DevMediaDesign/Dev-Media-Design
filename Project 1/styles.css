@@ -1,0 +1,119 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+/* Container for the entire game */
+#game-container {
+    max-width: 960px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #333;
+}
+
+/* Game header with level and experience info */
+#game-header {
+    background-color: #292e49;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Title of the game */
+#game-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* User stats in the header */
+#user-stats p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Narrative and instructions section */
+#story-panel {
+    padding: 20px;
+    text-align: center;
+    background: #f6f7fb;
+    border-top: 1px solid #eee;
+}
+
+/* Draggable items and coding area */
+#coding-area {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for draggable code snippets */
+.draggable {
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: grab;
+    transition: transform 0.2s ease-in-out;
+}
+
+.draggable:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Drop zone styling */
+#drop-zone {
+    width: 80%;
+    min-height: 150px;
+    background-color: #eee;
+    border: 2px dashed #bbb;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #666;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Footer with social sharing */
+#game-footer {
+    text-align: center;
+    padding: 10px 20px;
+    background: #292e49;
+    color: white;
+    font-size: 16px;
+}
+body {
+    background-color: #f0f0f0;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="gray" stroke-width="0.5"/></pattern><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><rect width="100" height="100" fill="url(%23smallGrid)"/><path d="M 100 0 L 0 0 0 100" fill="none" stroke="gray" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)" /></svg>');
+    background-repeat: repeat;
+}

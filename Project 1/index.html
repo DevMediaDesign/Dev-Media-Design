@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quest</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+                <path d="M 10 0 L 0 0 0 10" fill="none" stroke="gray" stroke-width="0.5"/>
+            </pattern>
+            <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
+                <rect width="100" height="100" fill="url(#smallGrid)"/>
+                <path d="M 100 0 L 0 0 0 100" fill="none" stroke="gray" stroke-width="1"/>
+            </pattern>
+        </defs>
+        <rect width="100" height="100" fill="url(#grid)" />
+    </svg>
+    <div id="game-container">
+        <header id="game-header">
+            <h1>Code Quest: Learn to Code</h1>
+            <div id="user-stats">
+                <p>Level: 1</p>
+                <p>Experience: 0/100</p>
+            </div>
+        </header>
+        <section id="story-panel">
+            <p>Welcome to Code Quest! Drag and drop the right tags to create a simple HTML page.</p>
+        </section>
+        <section id="coding-area">
+            <div id="tasks">
+                <div draggable="true" class="draggable" id="html-tag"><code>&lt;html&gt;&lt;/html&gt;</code></div>
+                <div draggable="true" class="draggable" id="head-tag"><code>&lt;head&gt;&lt;/head&gt;</code></div>
+                <div draggable="true" class="draggable" id="title-tag"><code>&lt;title&gt;Your Title Here&lt;/title&gt;</code></div>
+            </div>
+            <div id="drop-zone">
+                <p>Drop code snippets here:</p>
+            </div>
+            <button onclick="submitCode()">Submit Code</button>
+        </section>
+        <footer id="game-footer">
+            <p>Share your progress!</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
